@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/react.css" />
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    function Heading(props){
+        return(
+            <div className="flex-container">
+            <h1>{props.title}</h1>
+            <h3>Total Number:{props.total}</h3>
+            </div>
+        )
+    }
+    function List(props){
+        return <li>{props.item}</li>
+    }
+    function Item(props){
+        return(
+            <div className="flex">
+            <h2 className="center">{props.header}</h2>
+            <ul>
+            <List item={props.items[0]}/>
+            <List item={props.items[1]}/>
+            <List item={props.items[2]}/>
+            </ul>
+            </div>
+        )
+    }
+    function ShoppingApp(props){
+        return(
+            <div>
+            <Heading title="My shopping App" total="9"/>
+            <Item header="Food" items={["Apple","Bread","cheese"]}/>
+            <Item header="clothes" items={["T-shirt","Pants","Jeans"]}/>
+            <Item header="Supplies" items={["Pen","Paper","Glue"]}/>
+            </div>
+        )
+    }
+    ReactDOM.render(
+        <ShoppingApp/>,
+        document.getElementById("root")
+    )
+    </script>
+</body>
+</html>

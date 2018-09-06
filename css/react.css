@@ -1,0 +1,20 @@
+body{
+    background-image: url("img/images.jpg");
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex{
+    width:20%;
+    margin:auto;
+    border: 1px solid grey;
+}
+.center{
+    text-align: center;
+}
+ul li{
+    color:blue;
+  }
