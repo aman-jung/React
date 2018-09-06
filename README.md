@@ -1,4 +1,4 @@
-#Shopping List 
+# Shopping List 
 In this project i created simple shopping list using React.
 ##Getting Started
 ####React
