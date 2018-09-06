@@ -1,15 +1,15 @@
 # Shopping List 
 In this project i created simple shopping list using React.
-##Getting Started
-####React
+## Getting Started
+#### React
 React is a javascript library which is used for building user interfaces.
 [More about React](https://reactjs.org/docs/getting-started.html)
 React is an independent reusable component that outputs a React Element based on its properties and state
 There are two types of React Component
-*[Functional Component](https://reactjs.org/docs/components-and-props.html)
-*[Class Component](https://reactjs.org/docs/components-and-props.html)
+* [Functional Component](https://reactjs.org/docs/components-and-props.html)
+* [Class Component](https://reactjs.org/docs/components-and-props.html)
 In my project i made use of [Functional Component](https://reactjs.org/docs/components-and-props.html)
-#Understanding the code
+# Understanding the code
 I have created 4 functional component in my project.They are:
 1.Heading
 2.List
